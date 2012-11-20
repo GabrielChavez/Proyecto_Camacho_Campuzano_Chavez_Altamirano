@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fondo2" >
+    </ImageView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" >
+
+        <RadioButton
+            android:id="@+id/canguil_grande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grande" />
+
+        <RadioButton
+            android:id="@+id/canguil_mediano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mediano" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" >
+
+        <RadioButton
+            android:id="@+id/hot_pollo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pollo" />
+
+        <RadioButton
+            android:id="@+id/hot_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Res" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radioGroup2"
+        android:layout_marginBottom="23dp"
+        android:layout_toLeftOf="@+id/radioGroup1"
+        android:src="@drawable/hotpng" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioGroup1"
+        android:layout_marginTop="21dp"
+        android:layout_toLeftOf="@+id/radioGroup1"
+        android:src="@drawable/canguilpng" />
+
+    <CheckBox
+        android:id="@+id/check_canguil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView1" />
+
+    <CheckBox
+        android:id="@+id/check_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView2" />
+
+    <CheckBox
+        android:id="@+id/check_nachos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="23dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:text="Total Actual"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/boton_guardar_pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_marginBottom="28dp"
+        android:layout_toLeftOf="@+id/radioGroup2"
+        android:text="Guardar" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/check_nachos"
+        android:layout_toLeftOf="@+id/radioGroup1"
+        android:src="@drawable/nachopng" />
+
+    <TextView
+        android:id="@+id/precio_grande_canguil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginRight="27dp"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/precio_mediano_canguil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radioGroup1"
+        android:layout_alignRight="@+id/precio_grande_canguil"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/precio_pollo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignRight="@+id/precio_mediano_canguil"
+        android:layout_alignTop="@+id/radioGroup2"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/precio_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignRight="@+id/precio_pollo"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/precio_nachos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/check_nachos"
+        android:layout_alignBottom="@+id/check_nachos"
+        android:layout_toRightOf="@+id/radioGroup1"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/boton_cancelar_pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/boton_guardar_pedido"
+        android:layout_alignBottom="@+id/boton_guardar_pedido"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/precio_res"
+        android:text="Cancelar" />
+
+    <TextView
+        android:id="@+id/total_pedido_canguil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/radioGroup1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

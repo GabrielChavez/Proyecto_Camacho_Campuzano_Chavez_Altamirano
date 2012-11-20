@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fondo2" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Total del Pedido"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/saldo_disponible_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/total"
+        android:layout_alignLeft="@+id/total"
+        android:layout_marginBottom="20dp"
+        android:text="Saldo Disponible "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/genera_pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saldo_disponible_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:onClick="generar"
+        android:text="Generar Pedido" />
+
+    <Button
+        android:id="@+id/grupo_canguil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/genera_pedido"
+        android:layout_marginTop="56dp"
+        android:onClick="canguil"
+        android:text="Canguil y Otros" />
+
+    <Button
+        android:id="@+id/grupo_bebidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/genera_pedido"
+        android:layout_marginBottom="62dp"
+        android:layout_toRightOf="@+id/total"
+        android:onClick="bebidas"
+        android:text="Bebidas" />
+
+    <TextView
+        android:id="@+id/total_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/genera_pedido"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/saldo_disponible_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genera_pedido"
+        android:layout_toLeftOf="@+id/total_valor"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

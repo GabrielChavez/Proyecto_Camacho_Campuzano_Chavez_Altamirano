@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fondo2" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/SaldoDisponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:onClick="VerificarSaldoDisponible"
+        android:text="Saldo Disponible" />
+
+    <Button
+        android:id="@+id/Comprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SaldoDisponible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:onClick="Comprar"
+        android:text="Comprar" />
+
+    <TextView
+        android:id="@+id/nombre_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:onClick="Ayuda"
+        android:text="Cerrar Sesion" />
+
+    <Button
+        android:id="@+id/cines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Comprar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="Ubicacion de Cines" />
+
+</RelativeLayout>

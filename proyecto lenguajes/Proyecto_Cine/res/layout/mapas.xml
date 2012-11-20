@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+  android:id="@+id/fondo"
+  android:src="@drawable/fondo2"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  >
+</ImageView>
+
+    <TextView
+        android:id="@+id/textcine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Ubicar Cine"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+
+     <TextView
+         android:id="@+id/vacio1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/textView1"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <RadioButton
+         android:id="@+id/cine1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/vacio"
+         android:layout_marginTop="14dp"
+         android:layout_toRightOf="@+id/vacio1"
+         android:text="CineMark - City Mall" />
+
+     <RadioButton
+         android:id="@+id/cine2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/cine1"
+         android:text="CineMark - Mall del Sol" />
+
+     <RadioButton
+         android:id="@+id/cine3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/cine2"
+         android:text="CineMark - Mall del Sur" />
+
+</RelativeLayout>

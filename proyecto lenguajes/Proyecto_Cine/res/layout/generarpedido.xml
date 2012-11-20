@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fondo_factura" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/registro_nombre_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="86dp"
+        android:text=""
+        android:textColor="@color/Negro"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/registro_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/registro_nombre_cliente"
+        android:layout_below="@+id/registro_nombre_cliente"
+        android:text=""
+         android:textColor="@color/Negro"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/registro_sala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/registro_fecha"
+        android:layout_below="@+id/registro_fecha"
+        android:layout_marginTop="24dp"
+        android:text=""
+         android:textColor="@color/Negro"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/registro_funcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/registro_sala"
+        android:layout_below="@+id/registro_sala"
+        android:text=""
+         android:textColor="@color/Negro"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/registro_asiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/registro_funcion"
+        android:layout_below="@+id/registro_funcion"
+        android:text=""
+         android:textColor="@color/Negro"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/registro_detalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/registro_asiento"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="76dp"
+        android:text=""
+         android:textColor="@color/Negro"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/boton_guardar_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/registro_detalle"
+        android:layout_alignParentBottom="true"
+        android:text="Hecho" />
+
+    <Button
+        android:id="@+id/boton_cancelar_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/registro_asiento"
+        android:text="Cancelar" />
+
+    <TextView
+        android:id="@+id/registro_total_etiqueta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/boton_guardar_registro"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="31dp"
+        android:text="Total del Pedido:"
+         android:textColor="@color/Rojo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/registro_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/registro_total_etiqueta"
+        android:layout_alignBottom="@+id/registro_total_etiqueta"
+        android:layout_alignRight="@+id/boton_cancelar_registro"
+         android:textColor="@color/Negro"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
